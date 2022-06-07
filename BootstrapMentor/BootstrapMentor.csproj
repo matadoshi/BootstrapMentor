@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20220606131649_CreateTableCoursePositionTrainerCategory.cs" />
+    <Compile Remove="Migrations\20220606131649_CreateTableCoursePositionTrainerCategory.Designer.cs" />
+    <Compile Remove="Migrations\20220606235938_CreatePlanFeatureTableAndManyToManyRelation.cs" />
+    <Compile Remove="Migrations\20220606235938_CreatePlanFeatureTableAndManyToManyRelation.Designer.cs" />
+    <Compile Remove="Migrations\20220607000447_CreatePlanFeatureTableAndManyToManyRelation.cs" />
+    <Compile Remove="Migrations\20220607000447_CreatePlanFeatureTableAndManyToManyRelation.Designer.cs" />
+    <Compile Remove="Migrations\20220607070922_CreatePlanFeatureTableAndManyToManyRelation.cs" />
+    <Compile Remove="Migrations\20220607070922_CreatePlanFeatureTableAndManyToManyRelation.Designer.cs" />
+    <Compile Remove="Migrations\20220607102347_CreatePlanFeatureTableAndManyToManyRelation.cs" />
+    <Compile Remove="Migrations\20220607102347_CreatePlanFeatureTableAndManyToManyRelation.Designer.cs" />
+    <Compile Remove="Migrations\20220607102604_CreatePlanFeatureTableAndManyToManyRelation.cs" />
+    <Compile Remove="Migrations\20220607102604_CreatePlanFeatureTableAndManyToManyRelation.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.25">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>
