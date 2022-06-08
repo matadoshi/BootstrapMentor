@@ -10,6 +10,7 @@ namespace BootstrapMentor.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.page = "Events";
             return View();
         }
     }

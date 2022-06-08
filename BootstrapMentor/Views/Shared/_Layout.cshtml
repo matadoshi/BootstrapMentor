@@ -48,13 +48,13 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="active" asp-controller="home" asp-action="index">Home</a></li>
-                    <li><a asp-controller="about" asp-action="index">About</a></li>
-                    <li><a asp-controller="courses" asp-action="index">Courses</a></li>
-                    <li><a asp-controller="trainers" asp-action="index">Trainers</a></li>
-                    <li><a asp-controller="events" asp-action="index">Events</a></li>
-                    <li><a asp-controller="pricing" asp-action="index">Pricing</a></li>
-                    <li><a asp-controller="contact" asp-action="index">Contact</a></li>
+                    <li><a class="@(ViewBag.page == "Home"?"active":"")" asp-controller="home" asp-action="index">Home</a></li>
+                    <li><a class="@(ViewBag.page == "About"?"active":"")" asp-controller="about" asp-action="index">About</a></li>
+                    <li><a class="@(ViewBag.page == "Courses"?"active":"")" asp-controller="courses" asp-action="index">Services</a></li>
+                    <li><a class="@(ViewBag.page == "Trainers"?"active":"")" asp-controller="trainers" asp-action="index">Portfolio</a></li>
+                    <li><a class="@(ViewBag.page == "Events"?"active":"")" asp-controller="events" asp-action="index">Team</a></li>
+                    <li><a class="@(ViewBag.page == "Pricing"?"active":"")" asp-controller="pricing" asp-action="index">Pricing</a></li>
+                    <li><a class="@(ViewBag.page == "Contact"?"active":"")" asp-controller="contact" asp-action="index">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->

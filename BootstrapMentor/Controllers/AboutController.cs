@@ -17,6 +17,7 @@ namespace BootstrapMentor.Controllers
         }
         public IActionResult Index()
         {
+            ViewBag.page="About";
             return View();
         }
     }

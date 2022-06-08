@@ -19,6 +19,8 @@ namespace BootstrapMentor.Controllers
         }
         public IActionResult Index()
         {
+            ViewBag.page = "Pricing";
+
             List<Plan> plans = _context.Plans.Include(c => c.PlanFeatures).ToList();
             List<FeatureItem> featureItems = _context.FeatureItems.ToList();
             PlanFeatureViewModel planFeatureViewModel = new PlanFeatureViewModel

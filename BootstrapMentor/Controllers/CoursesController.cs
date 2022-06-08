@@ -17,6 +17,7 @@ namespace BootstrapMentor.Controllers
         }
         public IActionResult Index()
         {
+            ViewBag.page = "Courses";
             return View(_context.Courses.Include(c => c.Category).Include(c => c.Trainer).ToList());
         }
     }
